@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewPhotoComponent } from './view-photo/view-photo.component';
+import { HttpClientModule} from '@angular/common/http';
 
 const myRoute=[
   {
@@ -21,7 +22,8 @@ const myRoute=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
